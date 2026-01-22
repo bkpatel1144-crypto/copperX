@@ -97,10 +97,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
       'max-video-preview': -1,
     },
-    bingbot: {
-      index: true,
-      follow: true,
-    },
   },
   verification: {
     google: 'google-verification-code',
