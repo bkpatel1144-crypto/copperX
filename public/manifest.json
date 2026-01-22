@@ -1,0 +1,22 @@
+{
+  "name": "CopperX - Premium Copper Bars",
+  "short_name": "CopperX",
+  "description": "Premium pure copper 1kg bars - Pure Copper supplier in Surat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d97706",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

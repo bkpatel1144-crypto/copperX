@@ -1,0 +1,140 @@
+// SEO Configuration for CopperX - Powerful SEO Optimization
+export const SEO_CONFIG = {
+  siteName: 'CopperX',
+  siteUrl: 'https://copperbar.shop',
+  siteLogo: 'https://copperbar.shop/logo.png',
+  description: 'Premium 99.9% pure copper bars supplier in Surat, Gujarat. Direct from Mayank Pokiya. Certified quality copper ingots, sheets & plates. Bulk orders welcome. Fast delivery. +91 8488801197',
+  keywords: [
+    'copper bar 1kg',
+    'pure copper supplier',
+    'copper ingot',
+    'copper supplier Surat',
+    'copper supplier Gujarat',
+    'premium copper bars',
+    'industrial copper',
+    'copper investment',
+    'copper price India',
+    'certified copper 99.9',
+    'bulk copper orders',
+    'copper bars manufacturer',
+    'copper sheets',
+    'copper plates',
+    'copper trading',
+    'Surat copper',
+    'Mayank Pokiya copper',
+  ],
+  author: 'Mayank Pokiya',
+  phone: '+91 8488801197',
+  whatsapp: '+91 8488801197',
+  email: 'contact@copperbar.shop',
+  address: {
+    streetAddress: 'Block No. 334/3, Vav Road, Kamrej, Jokha',
+    city: 'Surat',
+    state: 'Gujarat',
+    postalCode: '394185',
+    country: 'India',
+  },
+  socialMedia: {
+    facebook: 'https://www.facebook.com/copperx',
+    instagram: 'https://www.instagram.com/copperx',
+    twitter: 'https://www.twitter.com/copperx',
+    linkedin: 'https://www.linkedin.com/company/copperx',
+  },
+  business: {
+    type: 'LocalBusiness',
+    category: 'Copper Supplier',
+    priceRange: '₹₹',
+    ratingValue: 4.9,
+    ratingCount: 150,
+  },
+  openingHours: {
+    monday: { opens: '09:00', closes: '18:00' },
+    tuesday: { opens: '09:00', closes: '18:00' },
+    wednesday: { opens: '09:00', closes: '18:00' },
+    thursday: { opens: '09:00', closes: '18:00' },
+    friday: { opens: '09:00', closes: '18:00' },
+    saturday: { opens: '10:00', closes: '16:00' },
+    sunday: { opens: '', closes: '' },
+  },
+  pages: {
+    home: {
+      title: 'Premium Pure Copper 99.9% | Copper Bars | Copper Supplier Surat | CopperX',
+      description: 'Premium 99.9% pure copper bars supplier in Surat, Gujarat. Certified quality copper ingots, sheets & plates. Direct from Mayank Pokiya. Fast delivery. Bulk orders. +91 8488801197',
+      keywords: 'copper bars, pure copper, copper supplier Surat, copper ingot, premium copper, copper investment, copper price',
+    },
+    product: {
+      title: 'Pure Copper Bar 1KG | 99.9% Certified Quality | Industrial Grade | CopperX',
+      description: '99.9% pure copper bar 1kg - Premium quality certified. Perfect for industrial use, jewelry, electronics. Bulk orders available. Direct from Mayank Pokiya. Contact: +91 8488801197',
+      keywords: 'copper bar 1kg, 99.9% pure copper, industrial copper, copper ingot, copper price',
+    },
+    about: {
+      title: 'About CopperX | Mayank Pokiya Premium Copper Supplier | Surat, Gujarat',
+      description: 'CopperX is a premium pure copper supplier in Surat, Gujarat operated by Mayank Pokiya. 15+ years experience serving 1000+ customers worldwide. ISO certified quality.',
+      keywords: 'copper supplier, Mayank Pokiya, Surat copper, copper business, premium copper',
+    },
+    contact: {
+      title: 'Contact CopperX | Mayank Pokiya | Copper Supplier Surat | +91 8488801197',
+      description: 'Get in touch with Mayank Pokiya at CopperX. Phone, WhatsApp available 24/7. Office: Block No. 334/3, Vav Road, Kamrej, Jokha, Surat, Gujarat 394185.',
+      keywords: 'contact copper supplier, Mayank Pokiya contact, Surat copper contact',
+    },
+  },
+  structuredData: {
+    organization: {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      name: 'CopperX',
+      alternateName: 'Copper Bar Supplier',
+      url: 'https://copperbar.shop',
+      logo: 'https://copperbar.shop/logo.png',
+      description: 'Premium 99.9% pure copper bars supplier in Surat, Gujarat',
+      telephone: '+91 8488801197',
+      email: 'contact@copperbar.shop',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Block No. 334/3, Vav Road, Kamrej, Jokha',
+        addressLocality: 'Surat',
+        addressRegion: 'Gujarat',
+        postalCode: '394185',
+        addressCountry: 'IN',
+      },
+      priceRange: '₹₹',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: 4.9,
+        ratingCount: 150,
+      },
+      sameAs: [
+        'https://www.facebook.com/copperx',
+        'https://www.instagram.com/copperx',
+        'https://www.twitter.com/copperx',
+      ],
+    },
+    product: {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'Premium Pure Copper Bar 1KG',
+      description: '99.9% pure certified copper bar - Perfect for industrial use, jewelry, electronics',
+      brand: 'CopperX',
+      manufacturer: 'CopperX',
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: 4.9,
+        ratingCount: 150,
+      },
+    },
+  },
+};
+
+export function getPageMetadata(page: keyof typeof SEO_CONFIG.pages) {
+  const pageConfig = SEO_CONFIG.pages[page];
+  return {
+    title: pageConfig.title,
+    description: pageConfig.description,
+    keywords: pageConfig.keywords,
+  };
+}
